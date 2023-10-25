@@ -66,7 +66,21 @@ class PersonsDaoRepository {
     }
     
     func search(searchText: String) {
-        print("Person Search: \(searchText)")
+        let params: Parameters = ["kisi_ad": searchText]
+        
+        AF.request("http://kasimadalan.pe.hu/kisiler/tum_kisiler_arama.php", method: .post, parameters: params).response { response in
+            if let data = response.data {
+                do {
+                    let response = try JSONDecoder().decode(PersonsResponse.self, from: data)
+                    
+                    if let list = response.kisiler {
+                        self.personsList.onNext(list)
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
     
     func uploadPersons() {
