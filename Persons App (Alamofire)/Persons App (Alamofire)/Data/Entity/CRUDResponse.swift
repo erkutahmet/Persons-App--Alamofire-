@@ -9,5 +9,5 @@ import Foundation
 
 class CRUDResponse: Codable { // CR-> Create, U-> Update, D-> Delete
     var success: Int?
-    var massage: String?
+    var message: String?
 }

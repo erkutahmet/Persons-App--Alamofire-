@@ -13,7 +13,20 @@ class PersonsDaoRepository {
     var personsList = BehaviorSubject<[Persons]>(value: [Persons]())
     
     func save(person_name: String, person_phone: String) {
-        print("Person Save: \(person_name) - \(person_phone)")
+        let params: Parameters = ["kisi_ad": person_name,
+                                  "kisi_tel": person_phone]
+        
+        AF.request("http://kasimadalan.pe.hu/kisiler/insert_kisiler.php", method: .post, parameters: params).response { response in
+            if let data = response.data {
+                do {
+                    let response = try JSONDecoder().decode(CRUDResponse.self, from: data)
+                    print("Success: \(response.success!)")
+                    print("Message: \(response.message!)")
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
     
     func update(person_id: Int, person_name: String, person_phone: String) {
