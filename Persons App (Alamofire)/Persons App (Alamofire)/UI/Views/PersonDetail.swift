@@ -23,8 +23,8 @@ class PersonDetail: UIViewController {
     
     private func setUI() {
         if let p = person {
-            personNameTextField.text = p.person_name
-            personPhoneTextField.text = p.person_phone
+            personNameTextField.text = p.kisi_ad
+            personPhoneTextField.text = p.kisi_tel
         }
     }
     
@@ -36,7 +36,7 @@ class PersonDetail: UIViewController {
             if person_name != String() && person_phone != String() {
                 let pName = personName.trimmingCharacters(in: .whitespaces)
                 let pPhone = personPhone.trimmingCharacters(in: .whitespaces)
-                personDetailVM.update(person_id: p.person_id!,
+                personDetailVM.update(person_id: Int(p.kisi_id!)!,
                                       person_name: pName,
                                       person_phone: pPhone)
                 navigationController?.popToRootViewController(animated: true)

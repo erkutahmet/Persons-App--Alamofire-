@@ -30,9 +30,9 @@ class PersonsDaoRepository {
     
     func uploadPersons() {
         var list = [Persons]()
-        let p1 = Persons(person_id: 1, person_name: "Ahmet", person_phone: "1111")
-        let p2 = Persons(person_id: 2, person_name: "Zeynep", person_phone: "2222")
-        let p3 = Persons(person_id: 3, person_name: "Beyza", person_phone: "3333")
+        let p1 = Persons(kisi_id: "1", kisi_ad: "Ahmet", kisi_tel: "1111")
+        let p2 = Persons(kisi_id: "2", kisi_ad: "Zeynep", kisi_tel: "2222")
+        let p3 = Persons(kisi_id: "3", kisi_ad: "Beyza", kisi_tel: "3333")
         list.append(p1)
         list.append(p2)
         list.append(p3)

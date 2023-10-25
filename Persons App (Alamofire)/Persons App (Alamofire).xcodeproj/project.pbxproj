@@ -26,6 +26,9 @@
 		DCA232B72AE871AF000EAF2F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DCA232B62AE871AF000EAF2F /* RxCocoa */; };
 		DCA232B92AE871AF000EAF2F /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DCA232B82AE871AF000EAF2F /* RxCocoa-Dynamic */; };
 		DCA232BB2AE871AF000EAF2F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DCA232BA2AE871AF000EAF2F /* RxRelay */; };
+		DCA232C42AE9A48E000EAF2F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DCA232C32AE9A48E000EAF2F /* Alamofire */; };
+		DCA232C62AE9A50C000EAF2F /* CRUDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA232C52AE9A50C000EAF2F /* CRUDResponse.swift */; };
+		DCA232C82AE9A681000EAF2F /* PersonsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA232C72AE9A681000EAF2F /* PersonsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,8 @@
 		DCA232AB2AE870E0000EAF2F /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 		DCA232AD2AE870EB000EAF2F /* PersonRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRegisterViewModel.swift; sourceTree = "<group>"; };
 		DCA232AF2AE870F0000EAF2F /* PersonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewModel.swift; sourceTree = "<group>"; };
+		DCA232C52AE9A50C000EAF2F /* CRUDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDResponse.swift; sourceTree = "<group>"; };
+		DCA232C72AE9A681000EAF2F /* PersonsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 				DCA232BB2AE871AF000EAF2F /* RxRelay in Frameworks */,
 				DCA232B92AE871AF000EAF2F /* RxCocoa-Dynamic in Frameworks */,
 				DCA232B72AE871AF000EAF2F /* RxCocoa in Frameworks */,
+				DCA232C42AE9A48E000EAF2F /* Alamofire in Frameworks */,
 				DCA232B32AE871AF000EAF2F /* RxBlocking in Frameworks */,
 				DCA232B52AE871AF000EAF2F /* RxBlocking-Dynamic in Frameworks */,
 			);
@@ -145,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				DCA232A12AE87061000EAF2F /* Persons.swift */,
+				DCA232C52AE9A50C000EAF2F /* CRUDResponse.swift */,
+				DCA232C72AE9A681000EAF2F /* PersonsResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -179,6 +187,7 @@
 				DCA232B62AE871AF000EAF2F /* RxCocoa */,
 				DCA232B82AE871AF000EAF2F /* RxCocoa-Dynamic */,
 				DCA232BA2AE871AF000EAF2F /* RxRelay */,
+				DCA232C32AE9A48E000EAF2F /* Alamofire */,
 			);
 			productName = "Persons App (Draft Plan) MVVM";
 			productReference = DCA232832AE86FD1000EAF2F /* Persons App (Alamofire).app */;
@@ -210,6 +219,7 @@
 			mainGroup = DCA2327A2AE86FD1000EAF2F;
 			packageReferences = (
 				DCA232B12AE871AF000EAF2F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DCA232C22AE9A48E000EAF2F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = DCA232842AE86FD1000EAF2F /* Products */;
 			projectDirPath = "";
@@ -240,10 +250,12 @@
 			files = (
 				DCA2328B2AE86FD1000EAF2F /* HomePage.swift in Sources */,
 				DCA232A82AE870A0000EAF2F /* PersonDetail.swift in Sources */,
+				DCA232C62AE9A50C000EAF2F /* CRUDResponse.swift in Sources */,
 				DCA232AC2AE870E0000EAF2F /* HomePageViewModel.swift in Sources */,
 				DCA232AA2AE870CB000EAF2F /* PersonCell.swift in Sources */,
 				DCA232AE2AE870EB000EAF2F /* PersonRegisterViewModel.swift in Sources */,
 				DCA232B02AE870F0000EAF2F /* PersonDetailViewModel.swift in Sources */,
+				DCA232C82AE9A681000EAF2F /* PersonsResponse.swift in Sources */,
 				DCA232A62AE87090000EAF2F /* PersonRegister.swift in Sources */,
 				DCA232872AE86FD1000EAF2F /* AppDelegate.swift in Sources */,
 				DCA232A22AE87061000EAF2F /* Persons.swift in Sources */,
@@ -481,6 +493,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		DCA232C22AE9A48E000EAF2F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -508,6 +528,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DCA232B12AE871AF000EAF2F /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
+		};
+		DCA232C32AE9A48E000EAF2F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCA232C22AE9A48E000EAF2F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

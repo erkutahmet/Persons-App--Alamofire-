@@ -59,8 +59,8 @@ extension HomePage: UITableViewDelegate, UITableViewDataSource {
         
         let cell = personsTableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath) as! PersonCell
         
-        cell.personNameLabel.text = person.person_name
-        cell.personPhoneLabel.text = person.person_phone
+        cell.personNameLabel.text = person.kisi_ad
+        cell.personPhoneLabel.text = person.kisi_tel
         
         return cell
     }
@@ -76,13 +76,13 @@ extension HomePage: UITableViewDelegate, UITableViewDataSource {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { contextualAction, view, bool in
             let person = self.personsList[indexPath.row]
             
-            let alert = UIAlertController(title: "Deletion", message: "Are you sure delete \n(\(person.person_name!))", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Deletion", message: "Are you sure delete \n(\(person.kisi_ad!))", preferredStyle: .alert)
             
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
             alert.addAction(cancelAction)
             
             let okayAction = UIAlertAction(title: "Okay", style: .destructive) { action in
-                self.homePageVM.delete(person_id: person.person_id!)
+                self.homePageVM.delete(person_id: Int(person.kisi_id!)!)
             }
             alert.addAction(okayAction)
             

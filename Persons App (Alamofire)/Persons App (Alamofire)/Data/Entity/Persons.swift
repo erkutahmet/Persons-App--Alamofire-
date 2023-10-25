@@ -7,18 +7,18 @@
 
 import Foundation
 
-class Persons {
-    var person_id:Int?
-    var person_name:String?
-    var person_phone:String?
+class Persons: Codable {
+    var kisi_id: String?
+    var kisi_ad: String?
+    var kisi_tel: String?
     
     init(){
         
     }
     
-    init(person_id: Int, person_name: String, person_phone: String) {
-        self.person_id = person_id
-        self.person_name = person_name
-        self.person_phone = person_phone
+    init(kisi_id: String, kisi_ad: String, kisi_tel: String) {
+        self.kisi_id = kisi_id
+        self.kisi_ad = kisi_ad
+        self.kisi_tel = kisi_tel
     }
 }
