@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DCA232832AE86FD1000EAF2F /* Persons App (Draft Plan) MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Persons App (Draft Plan) MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA232832AE86FD1000EAF2F /* Persons App (Alamofire).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Persons App (Alamofire).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA232862AE86FD1000EAF2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA232882AE86FD1000EAF2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DCA2328A2AE86FD1000EAF2F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		DCA2327A2AE86FD1000EAF2F = {
 			isa = PBXGroup;
 			children = (
-				DCA232852AE86FD1000EAF2F /* Persons App (Draft Plan) MVVM */,
+				DCA232852AE86FD1000EAF2F /* Persons App (Alamofire) */,
 				DCA232842AE86FD1000EAF2F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,12 +74,12 @@
 		DCA232842AE86FD1000EAF2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCA232832AE86FD1000EAF2F /* Persons App (Draft Plan) MVVM.app */,
+				DCA232832AE86FD1000EAF2F /* Persons App (Alamofire).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DCA232852AE86FD1000EAF2F /* Persons App (Draft Plan) MVVM */ = {
+		DCA232852AE86FD1000EAF2F /* Persons App (Alamofire) */ = {
 			isa = PBXGroup;
 			children = (
 				DCA232862AE86FD1000EAF2F /* AppDelegate.swift */,
@@ -91,7 +91,7 @@
 				DCA232912AE86FD2000EAF2F /* LaunchScreen.storyboard */,
 				DCA232942AE86FD2000EAF2F /* Info.plist */,
 			);
-			path = "Persons App (Draft Plan) MVVM";
+			path = "Persons App (Alamofire)";
 			sourceTree = "<group>";
 		};
 		DCA2329A2AE87015000EAF2F /* UI */ = {
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCA232822AE86FD1000EAF2F /* Persons App (Draft Plan) MVVM */ = {
+		DCA232822AE86FD1000EAF2F /* Persons App (Alamofire) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCA232972AE86FD2000EAF2F /* Build configuration list for PBXNativeTarget "Persons App (Draft Plan) MVVM" */;
+			buildConfigurationList = DCA232972AE86FD2000EAF2F /* Build configuration list for PBXNativeTarget "Persons App (Alamofire)" */;
 			buildPhases = (
 				DCA2327F2AE86FD1000EAF2F /* Sources */,
 				DCA232802AE86FD1000EAF2F /* Frameworks */,
@@ -172,7 +172,7 @@
 			);
 			dependencies = (
 			);
-			name = "Persons App (Draft Plan) MVVM";
+			name = "Persons App (Alamofire)";
 			packageProductDependencies = (
 				DCA232B22AE871AF000EAF2F /* RxBlocking */,
 				DCA232B42AE871AF000EAF2F /* RxBlocking-Dynamic */,
@@ -181,7 +181,7 @@
 				DCA232BA2AE871AF000EAF2F /* RxRelay */,
 			);
 			productName = "Persons App (Draft Plan) MVVM";
-			productReference = DCA232832AE86FD1000EAF2F /* Persons App (Draft Plan) MVVM.app */;
+			productReference = DCA232832AE86FD1000EAF2F /* Persons App (Alamofire).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DCA2327E2AE86FD1000EAF2F /* Build configuration list for PBXProject "Persons App (Draft Plan) MVVM" */;
+			buildConfigurationList = DCA2327E2AE86FD1000EAF2F /* Build configuration list for PBXProject "Persons App (Alamofire)" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,7 +215,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCA232822AE86FD1000EAF2F /* Persons App (Draft Plan) MVVM */,
+				DCA232822AE86FD1000EAF2F /* Persons App (Alamofire) */,
 			);
 		};
 /* End PBXProject section */
@@ -402,7 +402,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3755NX4L2K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Persons App (Draft Plan) MVVM/Info.plist";
+				INFOPLIST_FILE = "Persons App (Alamofire)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -413,7 +413,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmeterkut.Persons-App--Draft-Plan--MVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmeterkut.Persons-App--Alamofire-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -430,7 +430,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3755NX4L2K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Persons App (Draft Plan) MVVM/Info.plist";
+				INFOPLIST_FILE = "Persons App (Alamofire)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -441,7 +441,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmeterkut.Persons-App--Draft-Plan--MVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmeterkut.Persons-App--Alamofire-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -452,7 +452,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DCA2327E2AE86FD1000EAF2F /* Build configuration list for PBXProject "Persons App (Draft Plan) MVVM" */ = {
+		DCA2327E2AE86FD1000EAF2F /* Build configuration list for PBXProject "Persons App (Alamofire)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCA232952AE86FD2000EAF2F /* Debug */,
@@ -461,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCA232972AE86FD2000EAF2F /* Build configuration list for PBXNativeTarget "Persons App (Draft Plan) MVVM" */ = {
+		DCA232972AE86FD2000EAF2F /* Build configuration list for PBXNativeTarget "Persons App (Alamofire)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCA232982AE86FD2000EAF2F /* Debug */,
