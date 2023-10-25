@@ -49,8 +49,20 @@ class PersonsDaoRepository {
     }
     
     func delete(person_id: Int) {
-        print("Person Delete: \(person_id)")
-        uploadPersons()
+        let params: Parameters = ["kisi_id": person_id]
+        
+        AF.request("http://kasimadalan.pe.hu/kisiler/delete_kisiler.php", method: .post, parameters: params).response { response in
+            if let data = response.data {
+                do {
+                    let response = try JSONDecoder().decode(CRUDResponse.self, from: data)
+                    print("Success: \(response.success!)")
+                    print("Message: \(response.message!)")
+                    self.uploadPersons()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
     
     func search(searchText: String) {
