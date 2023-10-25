@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import Alamofire
 
 class PersonsDaoRepository {
     var personsList = BehaviorSubject<[Persons]>(value: [Persons]())
@@ -29,13 +30,18 @@ class PersonsDaoRepository {
     }
     
     func uploadPersons() {
-        var list = [Persons]()
-        let p1 = Persons(kisi_id: "1", kisi_ad: "Ahmet", kisi_tel: "1111")
-        let p2 = Persons(kisi_id: "2", kisi_ad: "Zeynep", kisi_tel: "2222")
-        let p3 = Persons(kisi_id: "3", kisi_ad: "Beyza", kisi_tel: "3333")
-        list.append(p1)
-        list.append(p2)
-        list.append(p3)
-        personsList.onNext(list)
+        AF.request("http://kasimadalan.pe.hu/kisiler/tum_kisiler.php", method: .get).response { response in
+            if let data = response.data {
+                do {
+                    let response = try JSONDecoder().decode(PersonsResponse.self, from: data)
+                    
+                    if let list = response.kisiler {
+                        self.personsList.onNext(list)
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
 }
